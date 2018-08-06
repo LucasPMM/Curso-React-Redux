@@ -10,6 +10,9 @@ module.exports = {      // webpack ira exportar tudo que estiver aqui
         port: 8080,
         contentBase: './public'
     },
+    resolve: {
+        extensions: ['', '.js', '.jsx']
+    },
     module: {
         loaders: [{
             test: /.jsx?$/,             // tipos de arquivos a serem observados (.jsx é a extenção do react)
